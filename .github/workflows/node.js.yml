@@ -20,7 +20,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: npm install and build webpack
+    needs: build
       run: |
         npm install
         npm run build
